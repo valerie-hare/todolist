@@ -1,0 +1,118 @@
+/*--Blue background for body--*/
+#blue {
+  background-color: #034F84;
+  margin: 0;
+}
+/*--To-Do List Title--*/
+h2 {
+  text-align: center;
+  margin: auto;
+  padding: 2%;
+  font-family: 'Impact', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+form {
+  display: inline-block;
+  margin-left: 42%;
+}
+/*--Add task input box--*/
+input {
+    display: inline-block;
+    width: 15%;
+}
+/*--Div class container for list--*/
+.container {
+    text-align: center;
+    padding-bottom: 25px;
+}
+/*--Add button--*/
+button.addBtn {
+  background-color: #1BFFFF;
+  border: 2px solid #1BFFFF;
+  padding: .260rem .80rem;
+  border-radius: .25rem;
+  margin-left: 2px;
+}
+button:hover {
+  opacity: 70%;
+}
+/*--UL for adding task items to list--*/
+#todo {
+    margin: 10px auto;
+    width: 450px;
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+}
+/*--CSS for jQuery sortable--*/
+body.dragging, body.dragging * {
+  cursor: move;
+}
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+#todo ul.placeholder {
+  position: relative;
+}
+#todo ul.placeholder:before {
+  position: absolute;
+}
+/*--Clickable close element--*/
+a.close {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 25% 0 0;
+}
+a.close:hover {
+  color: #1BFFFF;
+}
+/*---Footer element---*/
+#footer {
+  font-size: 0.9em;
+  font-family: 'Helvetica', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+/*------------Responsive Media Queries-----------*/
+/*----Small Mobile Devices (320 to 480px)---*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  /*--input form--*/
+  form {
+    margin: 1% 1% 1% 10%;
+    width: 50%;
+  }
+  /*--Clickable close element--*/
+  a.close {
+    margin: 0 2% 0 4%;
+  }
+  /*--UL for adding task items to list--*/
+  #todo {
+      margin: 10px 0;
+      width: 280px;
+      font-family: 'Helvetica', sans-serif;
+      color: #FFFFFF;
+  }
+  /*--Footer for copyright notice--*/
+  #footer {
+    font-size: 0.8em;
+  }
+  }
+  /*---Small to Large Tablets (<= 768px)---*/
+  @media only screen and (max-width: 786px) and (min-width: 600px) {
+    form {
+      margin: 0 1% 2% 18%;
+    }
+    #todo {
+      margin: 10px 10px 0 30px;
+    }
+    #footer {
+      font-size: 0.8em;
+    }
+  }

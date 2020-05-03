@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body id="blue">
+    <div id="container">
+      <!--To-Do List Title-->
+      <h2>To-Do List</h2>
+      <form>
+        <input class="form-control" type="text" name="task" placeholder="Add task...">
+      </form>
+      <button type="button" class="addBtn">Add</button>
+    </div>
+    <div></div>
+    <!--Unordered list for adding task items
+      with contenteditable element to edit items added-->
+    <ul class="list" id="todo" contenteditable="true"></ul>
+    <footer>
+      <div id="footer">
+        <p>Copyright 2020 by Valerie Hare.</p>
+      </div>
+    </footer>
+    <script src="script/main.js"></script>
+  </body>
+</html>
